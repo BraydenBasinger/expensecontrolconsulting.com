@@ -1,0 +1,173 @@
+<!--
+  WHAT WE DO PAGE (what-we-do.html)
+  Services page. The 4 service cards each use a photo on the left
+  (150x150px box, photo fills it with even blue padding on all
+  sides) and text on the right. To swap a photo, change the file
+  name inside background-image:url('...').
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What We Do | Expense Control Consulting</title>
+<meta name="description" content="ECC reduces costs in uniforms, garbage, construction, and freight. Clients generally save between 25 and 55 percent.">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTKHVCG90G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTKHVCG90G');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "xa82pijym0");
+</script>
+
+</head>
+<body>
+
+<!-- ============ HEADER / NAV — same block on every page ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo-full.png" alt="Expense Control Consulting" class="logo-full-img" width="151" height="70">
+    </a>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="how-we-do-it.html">How We Do It</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="the-ecc-edge.html">The ECC Edge</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Get Started</a>
+  </div>
+</header>
+
+<!-- ============ PAGE TITLE BAND — h1 plus one-line subtitle ============ -->
+<div class="page-header">
+  <div class="container">
+    <h1>What We Do</h1>
+    <p>We guarantee you savings, or we don't get paid</p>
+  </div>
+</div>
+
+<!-- ============ INTRO PARAGRAPH ============ -->
+<section style="padding:40px 0 36px;">
+  <div class="container">
+    <p class="intro-text" style="margin-bottom:0;">Here is what we do. We take a hard look at the bills you are already paying. We find the overcharges, the errors, and the fees that should not be there. Then we win that money back and keep your costs low going forward. You do not pay us a dime unless we save you money.</p>
+  </div>
+</section>
+
+<!--
+  ============ SERVICE CARDS ============
+  Each card has 3 nested layers:
+    .card-img       = outer blue box (the padding/margin you see)
+    .card-img-inner = rounded, clips the photo to soft corners
+    <img>           = the actual photo file
+  To swap a photo, change the src="images/....jpg" on the <img> tag.
+  To add a 5th service, copy one whole "card card-with-image" block.
+-->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Our Services</span>
+      <h2>A few categories we help with</h2>
+    </div>
+
+    <div class="grid" style="gap:20px; max-width:860px; margin:0 auto;">
+      <div class="card card-with-image" style="border-left:4px solid var(--color-coral);">
+        <div class="card-img" style="background:var(--color-coral-light);"><div class="card-img-inner"><img src="images/uniforms.jpg" alt="Uniforms" width="400" height="400" loading="lazy"></div></div>
+        <div class="card-body">
+          <h3>Uniforms</h3>
+          <p>The big uniform rental companies make their bills hard to read on purpose. We read them anyway. We look for rate hikes that climb way past inflation, charges for items you never lost or damaged, and fees that were never in your contract. Then we win that money back and lock in pricing that works for you.</p>
+        </div>
+      </div>
+      <div class="card card-with-image" style="border-left:4px solid var(--color-teal);">
+        <div class="card-img" style="background:var(--color-teal-light);"><div class="card-img-inner"><img src="images/garbage.jpg" alt="Garbage" width="400" height="400" loading="lazy"></div></div>
+        <div class="card-body">
+          <h3>Garbage</h3>
+          <p>Waste bills are messy on purpose, and most companies overpay by 10 to 30 percent without ever knowing. We change that. We check whether your bins are too big or picked up too often, catch fuel and environmental fees charged on the wrong amount, and find pickups you paid for that never happened. We also make sure you get credit for what you recycle.</p>
+        </div>
+      </div>
+      <div class="card card-with-image" style="border-left:4px solid var(--color-amber);">
+        <div class="card-img" style="background:var(--color-amber-light);"><div class="card-img-inner"><img src="images/construction.jpg" alt="Construction" width="400" height="400" loading="lazy"></div></div>
+        <div class="card-body">
+          <h3>Construction</h3>
+          <p>Construction bills are big, and big bills hide big errors. We go through them line by line. We make sure labor is billed at the rate your contract says, that the work actually got done, and that every change order was approved and priced right. We also catch double charges, marked up materials, and credits you were owed but never got.</p>
+        </div>
+      </div>
+      <div class="card card-with-image" style="border-left:4px solid var(--color-purple);">
+        <div class="card-img" style="background:var(--color-purple-light);"><div class="card-img-inner"><img src="images/freight.jpg" alt="Freight" width="400" height="400" loading="lazy"></div></div>
+        <div class="card-body">
+          <h3>Freight</h3>
+          <p>One shipment can carry a base rate, a fuel surcharge, and a stack of extra fees, all pulled from different rate sheets. That leaves plenty of room for mistakes, and studies show 3 to 8 percent of freight spend is lost to them. We find it. We catch the same load billed twice, fees for things that never happened, and missing discounts you were promised.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAVINGS PERCENTAGE LINE ============ -->
+<section style="padding-top:56px; padding-bottom:56px;">
+  <div class="container" style="text-align:center;">
+    <p class="intro-text" style="margin-bottom:0;">Across all of our services, clients generally save between <strong style="color:var(--color-navy);">25 and 55 percent</strong>.</p>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to start saving?</h2>
+    <p>Let's see how much you could save.</p>
+    <a href="contact.html" class="btn btn-primary">Get Started</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER — same block on every page, LinkedIn icon lives here ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Expense Control Consulting</div>
+        <p style="color:#7E92B8; max-width:320px; margin:0 0 14px;">Expense savings, risk free.</p>
+        <!-- LinkedIn icon: change the href below to update the link -->
+        <a href="https://www.linkedin.com/company/expense-control-consulting" target="_blank" rel="noopener" aria-label="ECC on LinkedIn" style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.1); color:#A9B8DC;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.5-2.45s-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg>
+        </a>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="how-we-do-it.html">How We Do It</a></li>
+          <li><a href="who-we-are.html">Who We Are</a></li>
+          <li><a href="the-ecc-edge.html">The ECC Edge</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; Expense Control Consulting
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

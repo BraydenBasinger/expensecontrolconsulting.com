@@ -1,0 +1,176 @@
+<!--
+  CONTACT PAGE (contact.html)
+  IMPORTANT: this whole site is plain HTML/CSS/JS, which means it
+  will be public once it is on GitHub Pages (see README.md for the
+  full explanation). The phone number and email below are not
+  written into the page as plain text. They only appear after the
+  visitor clicks the button, which is the protection described in
+  the comments further down.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Expense Control Consulting</title>
+<meta name="description" content="Contact Expense Control Consulting to start saving on your business expenses. Risk free, no savings, no fee.">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTKHVCG90G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTKHVCG90G');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "xa82pijym0");
+</script>
+
+</head>
+<body>
+
+<!-- ============ HEADER / NAV — same block on every page ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo-full.png" alt="Expense Control Consulting" class="logo-full-img" width="151" height="70">
+    </a>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="how-we-do-it.html">How We Do It</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="the-ecc-edge.html">The ECC Edge</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Get Started</a>
+  </div>
+</header>
+
+<!-- ============ PAGE TITLE BAND ============ -->
+<div class="page-header">
+  <div class="container">
+    <h1>Let's Talk</h1>
+    <p>Reach out and let's start saving</p>
+  </div>
+</div>
+
+<!--
+  ============ CONTACT CARDS ============
+  No LinkedIn icon on this page on purpose, it only shows in the
+  footer. Phone number is set in the revealPhone() function below.
+  Email is built from "user" + "@" + "domain" inside revealEmail(),
+  edit those two variables to change the address.
+-->
+<section>
+  <div class="container" style="max-width:720px;">
+
+    <div class="contact-info-grid" style="grid-template-columns:repeat(2, 1fr); max-width:520px; margin-left:auto; margin-right:auto;">
+      <div class="contact-info-card">
+        <div class="contact-info-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3 style="font-size:1rem;">Call Us</h3>
+        <!--
+          The phone number is hidden until clicked. This will not stop
+          every spam caller, but it keeps the number off the page for
+          basic scraping bots that scan for visible numbers.
+        -->
+        <p style="margin:0;">
+          <button type="button" class="reveal-btn" id="phone-reveal" onclick="revealPhone()">Show phone number</button>
+          <span id="phone-number" style="display:none; font-weight:600; color:var(--color-navy);"></span>
+        </p>
+      </div>
+      <div class="contact-info-card">
+        <div class="contact-info-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3 style="font-size:1rem;">Email Us</h3>
+        <!--
+          The email address is not written anywhere in the page until
+          the button is clicked. This keeps it off the page by default
+          for basic scraping bots, similar to the phone number.
+        -->
+        <p style="margin:0;">
+          <button type="button" class="reveal-btn" id="email-reveal" onclick="revealEmail()">Show email address</button>
+          <a href="#" id="email-link" style="display:none; font-weight:600; color:var(--color-navy);"></a>
+        </p>
+      </div>
+    </div>
+
+    <!--
+      EDIT YOUR CONTACT INFO HERE:
+      - Phone number is the string inside revealPhone()
+      - Email is built from "user" and "domain" inside revealEmail()
+    -->
+    <script>
+      // Email is built only when the button is clicked, so it never
+      // sits in the page as plain text and is not built automatically
+      // on page load either.
+      function revealEmail() {
+        var user = "brayden";
+        var domain = "expensecc.com";
+        var address = user + "@" + domain;
+        var link = document.getElementById("email-link");
+        link.href = "mailto:" + address;
+        link.textContent = address;
+        link.style.display = "inline";
+        document.getElementById("email-reveal").style.display = "none";
+      }
+
+      function revealPhone() {
+        document.getElementById("phone-number").textContent = "858-602-8184";
+        document.getElementById("phone-number").style.display = "inline";
+        document.getElementById("phone-reveal").style.display = "none";
+      }
+    </script>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER — same block on every page, LinkedIn icon lives here ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Expense Control Consulting</div>
+        <p style="color:#7E92B8; max-width:320px; margin:0 0 14px;">Expense savings, risk free.</p>
+        <!-- LinkedIn icon: change the href below to update the link -->
+        <a href="https://www.linkedin.com/company/expense-control-consulting" target="_blank" rel="noopener" aria-label="ECC on LinkedIn" style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.1); color:#A9B8DC;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.5-2.45s-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg>
+        </a>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="how-we-do-it.html">How We Do It</a></li>
+          <li><a href="who-we-are.html">Who We Are</a></li>
+          <li><a href="the-ecc-edge.html">The ECC Edge</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; Expense Control Consulting
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

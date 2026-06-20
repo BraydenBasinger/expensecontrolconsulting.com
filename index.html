@@ -1,0 +1,230 @@
+<!--
+  HOME PAGE (index.html)
+  This is the main landing page. The same header, nav, and footer
+  pattern repeats at the top and bottom of every other page in this
+  site, so once you know how to edit it here, you know how to edit
+  it everywhere.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Control Consulting | Expense Savings, Risk Free</title>
+<meta name="description" content="Expense Control Consulting finds savings in your business costs. We check your bills, fix overcharges, and get you better prices. If we do not save you money, you do not pay.">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTKHVCG90G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTKHVCG90G');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "xa82pijym0");
+</script>
+
+</head>
+<body>
+
+<!-- ============ HEADER / NAV — same block on every page ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo-full.png" alt="Expense Control Consulting" class="logo-full-img" width="151" height="70">
+    </a>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="how-we-do-it.html">How We Do It</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="the-ecc-edge.html">The ECC Edge</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Get Started</a>
+  </div>
+</header>
+
+<!-- ============ HERO — big intro section, navy text, no image ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Expense Savings, Risk Free</span>
+    <h1>Expense Control Consulting</h1>
+    <p class="lead">We check invoices. We identify errors. We propose savings opportunities.</p>
+    <div class="hero-actions">
+      <a href="what-we-do.html" class="btn btn-primary">See Our Services</a>
+      <a href="who-we-are.html" class="btn btn-outline">About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAR — the 3 number callouts ============ -->
+<section>
+  <div class="container">
+    <div class="stats-bar">
+      <div>
+        <div class="stat-icon stat-icon-gauge">
+          <svg width="80" height="80" viewBox="0 0 50 50" fill="none">
+            <path d="M7,32 A18,18 0 1 1 43,32" stroke="#E8ECF2" stroke-width="6" stroke-linecap="round"/>
+            <path d="M12.27,19.27 A18,18 0 0 1 27.82,14.22" stroke="#4A8FE0" stroke-width="6" stroke-linecap="round"/>
+            <line x1="25" y1="32" x2="20.67" y2="18.69" stroke="#012169" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="25" cy="32" r="3.5" fill="#012169"/>
+          </svg>
+        </div>
+        <div class="stat-num">25-55%</div>
+        <div class="stat-label">Average client savings</div>
+      </div>
+      <div>
+        <div class="stat-icon">
+          <svg width="80" height="80" viewBox="0 0 50 50" fill="none">
+            <rect x="7" y="7" width="26" height="26" rx="2.5" fill="#FFFFFF" stroke="#D33B3B" stroke-width="2"/>
+            <rect x="10" y="10" width="26" height="26" rx="2.5" fill="#FFFFFF" stroke="#D33B3B" stroke-width="2"/>
+            <rect x="13" y="13" width="26" height="26" rx="2.5" fill="#FFFFFF" stroke="#D33B3B" stroke-width="2"/>
+            <rect x="16" y="16" width="26" height="26" rx="2.5" fill="#FFFFFF" stroke="#D33B3B" stroke-width="2"/>
+            <path d="M16 23h26" stroke="#D33B3B" stroke-width="2"/>
+            <rect x="16" y="16" width="26" height="7" rx="2.5" fill="#D33B3B"/>
+            <path d="M22 14v5M36 14v5" stroke="#D33B3B" stroke-width="2" stroke-linecap="round"/>
+            <path d="M21 29h3M27.5 29h3M34 29h3M21 34h3M27.5 34h3" stroke="#D33B3B" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="stat-num">48 Months</div>
+        <div class="stat-label">Audit of past invoices</div>
+      </div>
+      <div>
+        <div class="stat-icon">
+          <svg width="80" height="80" viewBox="0 0 50 50" fill="none">
+            <rect x="6" y="15" width="38" height="21" rx="2.5" fill="#E4F4EC" stroke="#3E8E5A" stroke-width="2"/>
+            <circle cx="25" cy="25.5" r="5.5" fill="#FFFFFF" stroke="#3E8E5A" stroke-width="1.8"/>
+            <path d="M25 22v7M23.2 23.2c0-.8.8-1.4 1.8-1.4 1 0 1.8.5 1.8 1.2M26.8 27.8c0 .8-.8 1.4-1.8 1.4-1 0-1.8-.6-1.8-1.4" stroke="#3E8E5A" stroke-width="1.3" stroke-linecap="round"/>
+            <circle cx="12.5" cy="25.5" r="1.6" fill="#3E8E5A"/>
+            <circle cx="37.5" cy="25.5" r="1.6" fill="#3E8E5A"/>
+            <circle cx="25" cy="25" r="17" fill="none" stroke="#D33B3B" stroke-width="3"/>
+            <line x1="13" y1="13" x2="37" y2="37" stroke="#D33B3B" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="stat-num">$0</div>
+        <div class="stat-label">Cost if we do not save you money</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK SERVICES — 4 short cards, full detail lives on what-we-do.html ============ -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">What We Do</span>
+      <h2>We lower your costs and keep them low</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card">
+        <div class="card-icon" style="background:var(--color-coral-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8734A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l-4.5 2.2L6 9l1.5-.8V20h9V8.2L18 9l1.5-2.8L15 4c0 1.7-1.3 3-3 3s-3-1.3-3-3z"/></svg>
+        </div>
+        <h3>Uniforms</h3>
+        <p>Sneaky rate hikes and junk fees pad your bill. We find them and strip them out.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:var(--color-teal-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2BA8A0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 11.5a1.5 1.5 0 0 1-1.5 1.5H7.5A1.5 1.5 0 0 1 6 19.5L5 8z"/><path d="M3.5 8h17M9 5.5A2.5 2.5 0 0 1 11.5 3h1A2.5 2.5 0 0 1 15 5.5V8H9V5.5z"/><path d="M10 11.5v6M14 11.5v6"/></svg>
+        </div>
+        <h3>Garbage</h3>
+        <p>Wrong rates. Bins you do not need. Surcharges that should not be there. We catch them all.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:var(--color-amber-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E0A92E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="13" width="8" height="6" rx="1"/><circle cx="6" cy="19.5" r="1.4"/><circle cx="11.5" cy="19.5" r="1.4"/><path d="M11 15h3.5l3-4.5h2.2c.7 0 1.3.6 1.3 1.3V17a1.5 1.5 0 0 1-1.5 1.5h-1"/><path d="M14.5 15v-5"/></svg>
+        </div>
+        <h3>Construction</h3>
+        <p>We check every charge against your contract and flag what does not belong.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:var(--color-purple-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7A6FD0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="11" height="9" rx="1"/><path d="M13.5 10h3.7l2.8 3v3h-6.5"/><circle cx="6.5" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+        </div>
+        <h3>Freight</h3>
+        <p>Wrong rates. Double bills. Fees for things that never happened. We find the money and get it back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS — real quotes, edit text/author/company here ============ -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Testimonials</span>
+      <h2>What people say</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="testimonial">
+        <svg class="testimonial-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.2 11c-1.8 0-3.2 1.5-3.2 3.3 0 1.8 1.4 3.3 3.2 3.3.3 0 .6 0 .8-.1-.5 1.6-1.9 2.8-3.6 3v1.8c3.3-.2 5.9-2.9 5.9-6.7v-1.3c0-1.8-1.4-3.3-3.1-3.3zm10 0c-1.8 0-3.2 1.5-3.2 3.3 0 1.8 1.4 3.3 3.2 3.3.3 0 .6 0 .8-.1-.5 1.6-1.9 2.8-3.6 3v1.8c3.3-.2 5.9-2.9 5.9-6.7v-1.3c0-1.8-1.4-3.3-3.1-3.3z"/></svg>
+        <p class="testimonial-quote">"Brayden's work on our waste savings project, spanning 80 locations, demonstrates his strong ability to audit, right size containers, and identify potential overcharges, including uncovering a six figure overcharge at a single location."</p>
+        <div class="testimonial-author">Manager of Facilities and Operations Support</div>
+        <div class="testimonial-role">Fortune 500 Company</div>
+      </div>
+      <div class="testimonial">
+        <svg class="testimonial-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.2 11c-1.8 0-3.2 1.5-3.2 3.3 0 1.8 1.4 3.3 3.2 3.3.3 0 .6 0 .8-.1-.5 1.6-1.9 2.8-3.6 3v1.8c3.3-.2 5.9-2.9 5.9-6.7v-1.3c0-1.8-1.4-3.3-3.1-3.3zm10 0c-1.8 0-3.2 1.5-3.2 3.3 0 1.8 1.4 3.3 3.2 3.3.3 0 .6 0 .8-.1-.5 1.6-1.9 2.8-3.6 3v1.8c3.3-.2 5.9-2.9 5.9-6.7v-1.3c0-1.8-1.4-3.3-3.1-3.3z"/></svg>
+        <p class="testimonial-quote">"Brayden addresses our billing and service concerns with a clear understanding of vendor deficiencies. His site visits demonstrate commitment and a focus on finding extra savings. He is a true gem!"</p>
+        <div class="testimonial-author">Operations Clerk</div>
+        <div class="testimonial-role">Fortune 500 Company</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND — closing call to action, light blue background ============ -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Let's Talk</h2>
+    <p>Click the button below and let's start saving.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER — same block on every page, LinkedIn icon lives here ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Expense Control Consulting</div>
+        <p style="color:#7E92B8; max-width:320px; margin:0 0 14px;">Expense savings, risk free.</p>
+        <!-- LinkedIn icon: change the href below to update the link -->
+        <a href="https://www.linkedin.com/company/expense-control-consulting" target="_blank" rel="noopener" aria-label="ECC on LinkedIn" style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.1); color:#A9B8DC;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.5-2.45s-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg>
+        </a>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="how-we-do-it.html">How We Do It</a></li>
+          <li><a href="who-we-are.html">Who We Are</a></li>
+          <li><a href="the-ecc-edge.html">The ECC Edge</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; Expense Control Consulting
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
